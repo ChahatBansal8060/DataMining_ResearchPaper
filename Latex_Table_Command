@@ -1,0 +1,34 @@
+\begin{center}
+\begin{longtable}{ |m{5em}|m{6em}|m{6em}|m{6em}|m{6em}|m{6em}| }
+\caption{Summary of Selected Research Papers\label{long}}\\
+ \hline
+ {} & \textbf{Retrieving ROI for user exploration (2014)} & \textbf{GeoScop: A scalable approach to Geo-social Clustering of places (2015)} & \textbf{Skygraph- retrieving ROI using skyline subgraph queries (2017)} & \textbf{Density-based place clustering using Geo-social Network data (2018)} & \textbf{Exploring urban ROI through analysis of online map search queries (2018)}\\
+ \hline
+ \textbf{Spatial Aspect} & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark \\
+ \hline
+ \textbf{Temporal Aspect} &  &  &  & \checkmark & \checkmark \\
+ \hline
+ \textbf{Social Aspect} &  & \checkmark &  & \checkmark & \\
+ \hline
+ \textbf{Spatial Distance Measure} & Road Network Distance & Euclidean Distance & Ratio of shortest path in network graph and total coverage of query keywords & Euclidean Distance & PageRank and Heat value\\
+ \hline
+ \textbf{Social Distance Measure} & N/A & MinMax Distance & N/A & Depends on Visitors of the places and the friendship association between them & N/A \\
+ \hline
+ \textbf{ROI Detection Algorithm} & Tuple Generation Algorithm (TGEN) & GeoScop- Iterative combination of DBSCAN and Expectation Maximization & Approximation algorithm for finding k-skyline subgraphs called SkyGraph & Density-based Clustering Places in Geo-Social Networks (DCPGS) & DBSCAN \\
+ \hline
+ \textbf{Core clustering approach} & Length-Constrained Maximum-Sum Region (LCMSR) & DBSCAN & Agglomerative Clustering & DBSCAN & DBSCAN \\
+ \hline
+ \textbf{Road network representation} & Spatial Network & Spatial Network & Spatial Network & Spatial Network & Urban region partition on grid basis \\
+ \hline
+ \textbf{Time Complexity of algorithm} & O($|$E$_Q$$|$T$_{max}^2$) & O(i(nlogn+$|$D$|$)) & O(n$^3$) & O(nlogn) & O(n$^2$) \\
+ \hline
+ \textbf{Input data to the system} & Query keywords, size constraint and rectangular broad region of interest & Check-in data & Query keywords from user & Social network, set of places, Check-in of users & Set of online map search queries \\
+ \hline
+ \textbf{Assumptions or dependencies} & $\alpha$ & MinPts, $\delta$$_g$, $\delta$$_s$, minSim, k & Radius parameter for Partner Index & MinPts, $\epsilon$, $\omega$, $\tau$, maxD & PR$_{th}$,  H$_{th}$, N$_{th}$, M$_{size}$ and grid size \\
+ \hline
+ \textbf{Quality of ROI} & Annotation Results & Visualization-based and Quantitative Analysis & N/A & Visualization, social entropy and community score (based on internal density and conductance) & N/A \\
+ \hline
+ \textbf{Scalability} & Greedy algorithm with accuracy compromised & Grid-based index structure and sliding window partitioning & Structured index called Partner Index & N/A & Scalable because number of grids \textless number of POI locations \\
+ \hline
+\end{longtable}
+\end{center}
